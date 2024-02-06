@@ -1,5 +1,7 @@
 # Getting Started
 
+Note: Make sure to use node version >= 18.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,6 +15,6 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 
-### `json-server --watch data.json --port 8000`
+### `npx json-server --watch data.json --port 8000`
 
 Runs the mock api to fetch the metadata used in CampaignsPage.ts
