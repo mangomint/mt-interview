@@ -1,0 +1,22 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.campaignsPage {
+  .newCampaignBtnCt {
+    @include center-div();
+
+    .newCampaignBtn {
+      cursor: pointer;
+      background: $mt-color-magenta-400;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 44px;
+      padding: 12px;
+      font-weight: 500;
+
+      @include touch-hover() {
+        background: $mt-color-magenta-600;
+      }
+    }
+  }
+}

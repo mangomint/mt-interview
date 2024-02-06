@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "tt-commons";
+  src: url("../fonts/tt-commons-var-roman.woff2") format("woff2-variations"),
+  url("../fonts/tt-commons-var-roman.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 800;
+}
+
+@font-face {
+  font-family: "tt-commons";
+  src: url("../fonts/tt-commons-var-italic.woff2") format("woff2-variations"),
+  url("../fonts/tt-commons-var-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 800;
+}
+
+body {
+  margin: 0;
+  font-family: tt-commons, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

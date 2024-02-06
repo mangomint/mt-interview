@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {
+    Routes,
+    Route,
+    Link, NavLink,
+} from "react-router-dom";
+import CampaignsPage from "./campaigns/CampaignsPage";
+import CampaignsMenuIcon from "./icons/CampaignsMenuIcon";
+
+function Welcome() {
+    return (
+        <div className="welcomeCt">
+            <div className="welcomeIcon">{"</>"}</div>
+            <div className="title">Thank you for interviewing with us!</div>
+            <div>We hope you enjoy this coding challenge 🚀</div>
+        </div>
+    );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <div className="navbar">
+          <div className="logo">
+              <NavLink to="/"><div className="mtLogoInner"></div></NavLink>
+          </div>
+          <div className="mainLinks">
+              <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/campaigns"><CampaignsMenuIcon />Campaigns</NavLink>
+          </div>
+        </div>
+
+          <Routes>
+            <Route path="/"  element={<Welcome />}/>
+            <Route path="/campaigns"  element={<CampaignsPage />}/>
+          </Routes>
+      </>
   );
 }
 

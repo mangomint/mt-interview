@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.campaignBuilderPage {
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3000;
+  background-color: #fff;
+
+  .placeholder {
+    @include center-div();
+  }
+}

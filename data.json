@@ -1,0 +1,44 @@
+{
+  "campaigns": {
+    "staffMembers": {
+      "idList": [
+        1,
+        2,
+        3
+      ],
+      "byId": {
+        "1": {
+          "id": 1,
+          "firstName": "Andre",
+          "lastName": "Butler"
+        },
+        "2": {
+          "id": 2,
+          "firstName": "Harriet",
+          "lastName": "Love"
+        },
+        "3": {
+          "id": 3,
+          "firstName": "Jennifer",
+          "lastName": "White"
+        }
+      }
+    },
+    "services": {
+      "idList": [
+        1,
+        2
+      ],
+      "byId": {
+        "1": {
+          "id": 1,
+          "name": "Massage"
+        },
+        "2": {
+          "id": 2,
+          "name": "Facial"
+        }
+      }
+    }
+  }
+}
