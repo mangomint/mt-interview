@@ -2,7 +2,7 @@ import './App.scss';
 import {
     Routes,
     Route,
-    Link, NavLink,
+    NavLink,
 } from "react-router-dom";
 import CampaignsPage from "./campaigns/CampaignsPage";
 import CampaignsMenuIcon from "./icons/CampaignsMenuIcon";
