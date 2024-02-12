@@ -17,7 +17,12 @@ function StaffFilterIcon() {
       </g>
       <defs>
         <clipPath id="clip0_532_3863">
-          <rect width="18" height="16.2" fill="white" transform="translate(0 0.900024)" />
+          <rect
+            width="18"
+            height="16.2"
+            fill="white"
+            transform="translate(0 0.900024)"
+          />
         </clipPath>
       </defs>
     </svg>

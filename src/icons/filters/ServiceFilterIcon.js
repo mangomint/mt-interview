@@ -29,7 +29,12 @@ function ServiceFilterIcon() {
       </g>
       <defs>
         <clipPath id="clip0_532_3868">
-          <rect width="18" height="11.7" fill="white" transform="translate(0 3.15002)" />
+          <rect
+            width="18"
+            height="11.7"
+            fill="white"
+            transform="translate(0 3.15002)"
+          />
         </clipPath>
       </defs>
     </svg>

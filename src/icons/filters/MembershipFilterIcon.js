@@ -13,7 +13,12 @@ function MembershipFilterIcon() {
       </g>
       <defs>
         <clipPath id="clip0_532_3917">
-          <rect width="17.33" height="17.9" fill="white" transform="translate(0.334961 0.0500488)" />
+          <rect
+            width="17.33"
+            height="17.9"
+            fill="white"
+            transform="translate(0.334961 0.0500488)"
+          />
         </clipPath>
       </defs>
     </svg>

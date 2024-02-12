@@ -2,87 +2,86 @@
 @import "mixins.scss";
 
 .navbar {
-    align-items: center;
-    background: $mt-color-navy-600;
+  align-items: center;
+  background: $mt-color-navy-600;
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0;
+
+  top: 0;
+
+  a {
+    color: #fff;
+    transition: $mt-ui-button-transition;
+    text-decoration: none;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    height: 56px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 0;
-
-    top: 0;
-
-    a {
-        color: #fff;
-        transition: $mt-ui-button-transition;
-        text-decoration: none;
-        padding: 10px;
-        display: flex;
-
-        svg {
-            fill: #fff;
-            width: 22px;
-            margin-right: 10px;
-        }
-
-        @include touch-hover() {
-            color: $mt-color-light;
-
-            svg {
-                fill: $mt-color-light;
-            }
-        }
-
-        &.active {
-            color: $mt-color-light;
-
-            svg {
-                fill: $mt-color-light;
-            }
-        }
+    svg {
+      fill: #fff;
+      width: 22px;
+      margin-right: 10px;
     }
 
-    .logo {
-        display: flex;
-        align-items: center;
-        padding: 12px 10px;
-        margin: 0 0 0 12px;
+    @include touch-hover() {
+      color: $mt-color-light;
 
-        .mtLogoInner {
-            width: 27px;
-            height: 20px;
-            background: url(../images/mt-app-icon.png) no-repeat;
-            background-size: contain;
-        }
+      svg {
+        fill: $mt-color-light;
+      }
     }
+
+    &.active {
+      color: $mt-color-light;
+
+      svg {
+        fill: $mt-color-light;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    margin: 0 0 0 12px;
+
+    .mtLogoInner {
+      width: 27px;
+      height: 20px;
+      background: url(../images/mt-app-icon.png) no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
-
 .welcomeCt {
-    @include center-div();
+  @include center-div();
 
-    color: $mt-color-navy-600;
+  color: $mt-color-navy-600;
 
-    .title {
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 20px;
-    }
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
 
-    .welcomeIcon {
-        align-items: center;
-        background: $mt-color-purple-100;
-        border-radius: 8px;
-        display: inline-flex;
-        height: 65px;
-        justify-content: center;
-        width: 65px;
-        font-weight: 800;
-        font-size: 30px;
-    }
+  .welcomeIcon {
+    align-items: center;
+    background: $mt-color-purple-100;
+    border-radius: 8px;
+    display: inline-flex;
+    height: 65px;
+    justify-content: center;
+    width: 65px;
+    font-weight: 800;
+    font-size: 30px;
+  }
 }
