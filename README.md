@@ -1,6 +1,6 @@
 # Getting Started
 
-Note: Make sure to use node version >= 18.
+**Note: Make sure to use node version >= 18.**
 
 ## Available Scripts
 
