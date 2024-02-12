@@ -2,16 +2,83 @@
 @import "../../mixins.scss";
 
 .campaignBuilderPage {
-  bottom: 0;
-  height: 100vh;
   left: 0;
   position: fixed;
-  right: 0;
   top: 0;
   z-index: 3000;
-  background-color: #fff;
+  width: 100%;
+  background-color: $mt-color-navy-100;
+  padding-bottom: 300px;
+  overflow-y: scroll;
+  height: 100%;
 
   .placeholder {
     @include center-div();
+  }
+
+  .campaignNav {
+    display: flex;
+    height: 54px;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 20px;
+    border-bottom: 1px solid $mt-color-navy-150;
+
+    .back,
+    .back:visited {
+      color: #282c8e;
+
+      .backArrow {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+
+    .tabs {
+      width: 441px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      align-self: stretch;
+      align-items: center;
+
+      span {
+        color: $mt-color-navy-400;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &.active {
+          color: $mt-color-navy-600;
+          border-bottom: 4px solid #9ddde2;
+        }
+      }
+    }
+
+    button {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0;
+      display: flex;
+      align-items: center;
+      height: 36px;
+      border-radius: 5px;
+      padding: 0 20px;
+      font-family: tt-commons, sans-serif;
+    }
+
+    .save {
+      color: $mt-color-navy-400;
+      border: 1px solid $mt-color-navy-400;
+      background-color: #fff;
+      margin-right: 10px;
+    }
+
+    .saveAndNext {
+      border: 0;
+      background: #282c8e;
+      color: #fff;
+    }
   }
 }
