@@ -1,22 +1,6 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 
-@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
-
-$mt-primary: #282c8e;
-
-.has-text-primary {
-  color: $mt-primary !important;
-}
-
-.is-borderless {
-  border: none;
-}
-
-.dropdown-item {
-  color: $mt-primary !important;
-}
-
 .navbar {
   align-items: center;
   background: $mt-color-navy-600;

@@ -1,6 +1,8 @@
 @import '../../variables.scss';
 @import '../../mixins.scss';
 
+@import url('https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css');
+
 .campaignBuilderPage {
   left: 0;
   position: fixed;
@@ -13,6 +15,26 @@
   height: 100%;
 
   .settingsContainer {
+    $mt-primary: #282c8e;
+
+    .has-text-primary {
+      color: $mt-primary !important;
+    }
+
+    .is-borderless {
+      border: none;
+    }
+
+    .dropdown-item {
+      color: $mt-primary !important;
+    }
+
+    .dropdown-item {
+      &.is-active {
+        color: white !important;
+      }
+    }
+
     max-width: 580px;
     margin: auto;
     padding: 0 8px;
@@ -36,7 +58,7 @@
       }
     }
 
-    .tabs {
+    .navTabs {
       width: 441px;
       display: flex;
       justify-content: space-between;
