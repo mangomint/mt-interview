@@ -1,11 +1,7 @@
 {
   "campaigns": {
     "staffMembers": {
-      "idList": [
-        1,
-        2,
-        3
-      ],
+      "idList": [1, 2, 3],
       "byId": {
         "1": {
           "id": 1,
@@ -25,10 +21,7 @@
       }
     },
     "services": {
-      "idList": [
-        1,
-        2
-      ],
+      "idList": [1, 2],
       "byId": {
         "1": {
           "id": 1,

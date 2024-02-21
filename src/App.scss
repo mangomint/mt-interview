@@ -3,12 +3,18 @@
 
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
+$mt-primary: #282c8e;
+
 .has-text-primary {
-  color: #282c8e !important;
+  color: $mt-primary !important;
 }
 
 .is-borderless {
   border: none;
+}
+
+.dropdown-item {
+  color: $mt-primary !important;
 }
 
 .navbar {
